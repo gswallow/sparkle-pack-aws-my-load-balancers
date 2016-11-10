@@ -56,7 +56,7 @@ load_balancer_names _array!(registry!(:my_elb, 'public'))
 ```
 The `my_elb` registry will return an ELB name, where the ELB's 'Purpose'
 tag matches 'public'.  You can also override `ENV['environment']` by
-supplying the `environment parameter`:
+supplying the `environment` parameter:
 ```ruby
 load_balancer_names _array!(registry!(:my_elb, 'public', 'prod'))
 ```
