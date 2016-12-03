@@ -1,7 +1,8 @@
 require 'aws-sdk-core'
 
 client = ::Aws::ElasticLoadBalancing::Client.new()
-policy_descriptions = ::Array.new(client.describe_load_balancer_policies.policy_descriptions)
+policy_descriptions = ::Array.new(
+policy_descriptions = client.describe_load_balancer_policies.policy_descriptions
 policy_descriptions.collect do |d|
   d['policy_name'] if d['policy_type_name'] == 'SSLNegotiationPolicyType'
 end.compact!.sort!
