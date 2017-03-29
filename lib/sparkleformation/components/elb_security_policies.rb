@@ -10,6 +10,6 @@ SparkleFormation.component(:elb_security_policies) do
   parameters(:elb_security_policy) do
     type 'String'
     allowed_values policy_descriptions
-    default policy_descriptions.last
+    default 'ELBSecurityPolicy-2016-08'
   end
 end

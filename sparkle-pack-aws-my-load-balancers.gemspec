@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'sparkle-pack-aws-my-load-balancers'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.licenses = ['MIT']
   s.summary = 'AWS My Load Balancers SparklePack'
   s.description = 'SparklePack to detect load balancers in a VPC whose tags match specified filters.'
